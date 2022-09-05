@@ -33,7 +33,7 @@ public class DetailedPerson {
         }
     }
 
-    public static class PersonJobBuilder extends  PersonBuilder {
+    public static class PersonJobBuilder extends PersonBuilder {
         public PersonJobBuilder(DetailedPerson person) {
             this.person = person;
         }

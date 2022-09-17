@@ -21,6 +21,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     // added as implementation to make it easier to explain pattern unit tests in the same class
     implementation 'junit:junit:4.12'
+    // https://mvnrepository.com/artifact/com.google.inject/guice
+    implementation 'com.google.inject:guice:4.0'
+
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api 'org.apache.commons:commons-math3:3.6.1'
 

@@ -9,13 +9,18 @@
 plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
+//    id 'org.springframework.boot'
+//    id 'io.spring.dependency-management' version '1.0.14.RELEASE'
 }
+
+//group = 'com.example'
+//version = '0.0.1-SNAPSHOT'
+//sourceCompatibility = '17'
 
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
 }
-
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation 'junit:junit:4.12'
@@ -32,6 +37,10 @@ dependencies {
     implementation'org.reflections:reflections:0.9.11'
     implementation 'org.apache.commons:commons-lang3:3.0'
 
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+//    implementation 'org.springframework.boot:spring-boot/-starter'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.statemachine:spring-statemachine-core:3.2.0'
 }
 
 tasks.named('test') {

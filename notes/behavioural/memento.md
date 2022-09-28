@@ -1,0 +1,1 @@
+Keep state of an object and be able to return to previous state.
